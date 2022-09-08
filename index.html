@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formulaire</h1>
+<form>
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" pattern="">
+    </div>
+    <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom">
+    </div>
+    <div class="form-group">
+        <label for="adresse">Adresse</label>
+        <input type="text" name="adresse" id="adresse">
+    </div>
+    <div class="form-group">
+        <label for="cp">Code postal</label>
+        <input type="number" name="cp" id="cp" pattern="[0-9]{5}">
+    </div>
+    <div class="form-group">
+        <label for="ville">Ville</label>
+        <input type="text" name="ville" id="ville">
+    </div>
+    <div class="form-group">
+        <label for="tel">Numéro de téléphone</label>
+        <input type="tel" name="tel" id="tel" pattern="/(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="gender">Civilité</label>
+        <select class="form-control" id="gender">
+            <option>Monsieur</option>
+            <option>Madame</option>
+            <option>Autre</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" name="login" id="login">
+    </div>
+    <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$">
+    </div>
+    <input type="submit" value="Envoyer">
+</form>
+</body>
+</html>

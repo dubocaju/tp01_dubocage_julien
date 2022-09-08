@@ -1,0 +1,22 @@
+html {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+    color: red;
+    font-style: italic;
+}
+
+form > div {
+    color: aqua;
+}
+
+form :nth-child(2n) {
+    color: blueviolet;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+input:invalid {
+    color: red;
+    background-color: yellow;
+}
